@@ -1,1 +1,2 @@
 thesis	attempt	metric	baseline	status	summary
+#1	thesis/1-cache-regex-compilation-in-parsers	59366.8800	48448.7200	accepted	Cached regex parsing results by parsing media types and languages once in getMediaTypePriority/getLanguagePriority instead of repeatedly in specify() for each comparison. This eliminates redundant regex compilation and object creation in the hot path. Performance improved from 48448.72 to 59366.88 ops/sec (+22.5%).
